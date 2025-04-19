@@ -1,41 +1,19 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Projects | My Portfolio</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      darkMode: 'class',
-      theme: {
-        extend: {
-          colors: {
-            primary: '#2563eb',
-            secondary: '#1e3a8a',
-            accent: '#3b82f6',
-          },
-        },
-      },
-    };
-  </script>
-  <style>
-    html {
-      scroll-behavior: smooth;
-    }
-    input, textarea {
-      transition: all 0.2s ease-in-out;
-    }
-    input:focus, textarea:focus {
-      outline: none;
-      box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5);
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Aspect</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
 </head>
-<body class="bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-100 font-sans">
-  <header class="bg-primary dark:bg-secondary text-white py-6 px-4 text-center shadow-md">
-    <h1 class="text-4xl font-extrabold tracking-tight">My Portfolio</h1>
-    <nav class="mt-4 space-x-4">
+<body class="bg-gray-100 p-6">
+  <nav class="mt-4 space-x-4">
       <a href="index.html" class="hover:underline">Home</a>
       <a href="about.html" class="hover:underline">About</a>
       <a href="experience.html" class="hover:underline">Experience</a>
@@ -44,26 +22,63 @@
       <a href="skills.html" class="hover:underline">Skills</a>
       <a href="contact.html" class="hover:underline">Contact</a>
     </nav>
-  </header>
-  <main class="px-4 md:px-20 py-16">
-<h2 class='text-4xl font-bold mb-6 text-center text-accent'>Projects</h2>
-<div class='bg-white dark:bg-gray-800 p-6 rounded-lg shadow-xl'>
-<ul class='list-disc pl-5 space-y-2'>
-  <p1>RNN-Based Turbofan Degradation Forecasting</p1>
-  <ul class="list-disc list-inside space-y-2">
-<li>Portfolio Website - A personal website to showcase my work.</li>
-<li>Task Manager App - A productivity app for managing daily tasks.</li>
-</ul></div>
-    <div class='bg-white dark:bg-gray-800 p-6 rounded-lg shadow-xl'>
-<ul class='list-disc pl-5 space-y-2'>
-  <p1>RNN-Based Turbofan Degradation Forecasting</p1>
-  <ul class="list-disc list-inside space-y-2">
-<li>Portfolio Website - A personal website to showcase my work.</li>
-<li>Task Manager App - A productivity app for managing daily tasks.</li>
-</ul></div>
-  </main>
-  <footer class="bg-primary dark:bg-secondary text-white text-center py-6 mt-10 shadow-inner">
-    &copy; <script>document.write(new Date().getFullYear())</script> My Portfolio
-  </footer>
+    <h1 class="text-3xl font-semibold text-blue-600 text-center mb-8">Project Aspect</h1>
+
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="bg-white rounded-lg shadow-md p-6">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4">Core Functionality</h2>
+            <p class="text-gray-700 mb-4">
+                This aspect focuses on the essential features of the project.  It includes the key functions that the application must perform to meet its objectives.
+            </p>
+            <ul class="list-disc list-inside space-y-2">
+                <li class="text-gray-600">Feature 1: User Authentication</li>
+                <li class="text-gray-600">Feature 2: Data Management</li>
+                <li class="text-gray-600">Feature 3: Reporting</li>
+            </ul>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-6">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4">User Interface</h2>
+            <p class="text-gray-700 mb-4">
+                This aspect relates to how users will interact with the application.  A well-designed UI is crucial for user satisfaction and productivity.
+            </p>
+            <div class="bg-gray-50 rounded-md p-4">
+                <p class="text-gray-800">Key UI Elements:</p>
+                <ul class="list-disc list-inside space-y-1">
+                    <li class="text-gray-600">Intuitive Navigation</li>
+                    <li class="text-gray-600">Clear and Consistent Design</li>
+                    <li class="text-gray-600">Responsive Layout</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-6">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4">Performance</h2>
+            <p class="text-gray-700 mb-4">
+               This aspect considers the speed, responsiveness, and stability of the application.
+            </p>
+            <ul class="list-disc list-inside space-y-2">
+                <li class="text-gray-600">Fast Loading Times</li>
+                <li class="text-gray-600">Efficient Resource Usage</li>
+                 <li class="text-gray-600">Scalability</li>
+            </ul>
+        </div>
+
+         <div class="bg-white rounded-lg shadow-md p-6">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4">Security</h2>
+            <p class="text-gray-700 mb-4">
+               This aspect outlines the security measures to protect the application and its data.
+            </p>
+            <ul class="list-disc list-inside space-y-2">
+                <li class="text-gray-600">Data Encryption</li>
+                <li class="text-gray-600">Access Control</li>
+                 <li class="text-gray-600">Regular Security Audits</li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        // You can add JavaScript here for interactive features.
+        // For example, you could add a button to expand/collapse sections.
+    </script>
 </body>
 </html>
